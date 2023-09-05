@@ -1,0 +1,10 @@
+* {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 99.5vw;
+  height: 99.5vh;
+}
