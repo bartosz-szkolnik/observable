@@ -1,16 +1,4 @@
-import { Observable } from './lib';
-
-export function from<T>(array: T[]) {
-  return new Observable(observer => {
-    array.forEach(value => {
-      observer.next(value);
-    });
-
-    observer.complete();
-
-    return () => {};
-  });
-}
+import { Observable } from '../observable';
 
 export function fromEvent<T extends Event>(element: HTMLElement, eventName: keyof HTMLElementEventMap) {
   return new Observable<T>(observer => {
